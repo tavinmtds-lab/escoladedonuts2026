@@ -1,0 +1,124 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-woman-desktop",
+      "description": "Woman smiling holding a box of delicious donuts",
+      "imageUrl": "https://i.imgur.com/Cidq8gh.jpeg",
+      "imageHint": "donuts box"
+    },
+    {
+      "id": "hero-woman-mobile",
+      "description": "Woman holding a delicious donut",
+      "imageUrl": "https://i.imgur.com/jcZWAZm.png",
+      "imageHint": "woman donut"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Donut with strawberry and chocolate",
+      "imageUrl": "https://i.imgur.com/qYTq1C2.png",
+      "imageHint": "strawberry donut"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Donut with strawberry filling",
+      "imageUrl": "https://i.imgur.com/bzfcHhq.png",
+      "imageHint": "strawberry donut"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Donut with honey and cinnamon glaze",
+      "imageUrl": "https://i.imgur.com/cDxn1Np.png",
+      "imageHint": "cinnamon donut"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Creamy chocolate donut",
+      "imageUrl": "https://i.imgur.com/OqdNWE3.png",
+      "imageHint": "chocolate donut"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Colorful party donut",
+      "imageUrl": "https://i.imgur.com/cvwc1ub.png",
+      "imageHint": "colorful donut"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Snowy coconut donut",
+      "imageUrl": "https://i.imgur.com/IiidyvR.png",
+      "imageHint": "coconut donut"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Sicilian lemon donut",
+      "imageUrl": "https://i.imgur.com/257MKFc.png",
+      "imageHint": "lemon donut"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Glazed donut",
+      "imageUrl": "https://i.imgur.com/21ckQML.png",
+      "imageHint": "glazed donut"
+    },
+    {
+      "id": "gallery-9",
+      "description": "Donut with sprinkles",
+      "imageUrl": "https://i.imgur.com/60zw95X.png",
+      "imageHint": "donut sprinkles"
+    },
+    {
+      "id": "video-thumbnail",
+      "description": "Cartoon of a donut with a chef hat",
+      "imageUrl": "https://i.imgur.com/SZtG6rR.png",
+      "imageHint": "donut cartoon"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Testimonial screenshot 1",
+      "imageUrl": "https://i.imgur.com/Iy4dnCq.png",
+      "imageHint": "testimonial social"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Testimonial screenshot 2",
+      "imageUrl": "https://i.imgur.com/1Q6kP86.png",
+      "imageHint": "testimonial social"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Testimonial screenshot 3",
+      "imageUrl": "https://i.imgur.com/pYT5CQY.png",
+      "imageHint": "testimonial social"
+    },
+    {
+      "id": "features-image",
+      "description": "Person using a tablet to watch a course",
+      "imageUrl": "https://i.imgur.com/vvbnZmO.png",
+      "imageHint": "woman watching course"
+    },
+    {
+      "id": "faq-image",
+      "description": "A donut with a question mark on top.",
+      "imageUrl": "https://i.imgur.com/2T6oTyg.png",
+      "imageHint": "donut question"
+    },
+    {
+      "id": "juliana-fiorentelli-avatar",
+      "description": "Portrait of a female baker",
+      "imageUrl": "https://i.imgur.com/LOOhy1h.png",
+      "imageHint": "baker woman"
+    },
+    {
+      "id": "brickcake-hero-desktop",
+      "description": "Delicious looking brickcake on a table",
+      "imageUrl": "https://images.unsplash.com/photo-1541779972238-2c60cd11ffc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicm93bmllJTIwcGllY2V8ZW58MHx8fHwxNzYzNDMzOTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brownie piece"
+    },
+    {
+      "id": "brickcake-hero-mobile",
+      "description": "Close up of a piece of brickcake",
+      "imageUrl": "https://images.unsplash.com/photo-1628655386653-acd9ac2c4e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicm9ud25llJTIwY2hvY29sYXRlfGVufDB8fHx8MTc2MzQzMzk3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brownie chocolate"
+    }
+  ]
+}
