@@ -69,3 +69,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes gold-shine {
+    0% {
+      box-shadow: 0 0 5px 0px #FFD700, 0 0 5px 0px #FFD700;
+    }
+    50% {
+      box-shadow: 0 0 20px 5px #FFD700, 0 0 25px 8px #FFD700;
+    }
+    100% {
+      box-shadow: 0 0 5px 0px #FFD700, 0 0 5px 0px #FFD700;
+    }
+  }
+
+  .animate-gold-shine {
+    animation: gold-shine 2s infinite linear;
+  }
+}

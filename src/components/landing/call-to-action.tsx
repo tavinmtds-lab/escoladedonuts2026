@@ -7,6 +7,7 @@ import { Button } from '../ui/button';
 import { Bot, CheckCircle, MessageSquare, Goal } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { cn } from '@/lib/utils';
 
 export function CallToAction() {
   const benefits = [
@@ -42,8 +43,8 @@ export function CallToAction() {
               <wistia-player media-id="gez09v8ptg" aspect="0.5625"></wistia-player>
             </div>
             
-            <div className="flex flex-col items-center w-full max-w-md">
-                <ul className="mt-8 space-y-2 text-left self-start">
+            <div className="flex flex-col items-center w-full max-w-lg">
+                <ul className="mt-8 space-y-2 text-left self-start w-full px-4 sm:px-0">
                     {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3 text-base sm:text-lg">
                         <span className="text-xl sm:text-2xl mt-1">{benefit.icon}</span>
@@ -51,9 +52,9 @@ export function CallToAction() {
                     </li>
                     ))}
                 </ul>
-                <p className="mt-8 text-lg sm:text-xl italic">“Cada receita é um passo para a sua <b>liberdade financeira</b>.” – DONNIE IA</p>
+                <p className="mt-8 text-lg sm:text-xl italic px-4 sm:px-0">“Cada receita é um passo para a sua <b>liberdade financeira</b>.” – DONNIE IA</p>
             </div>
-            <Button size="lg" variant="default" className="mt-8 h-14 text-lg w-full sm:w-auto" asChild>
+            <Button size="lg" variant="default" className="mt-8 h-14 text-lg w-full max-w-md sm:w-auto animate-gold-shine" asChild>
                 <Link href="#oferta">
                 QUERO DESBLOQUEAR MINHA MENTORA
                 </Link>

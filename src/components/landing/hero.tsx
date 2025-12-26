@@ -45,7 +45,7 @@ export function Hero() {
                 height={40}
               />
               <p className="mt-2 text-lg text-primary-foreground font-semibold" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
-                Já somos mais de <span className="font-bold">1.280 confeiteiras</span>, só falta VOCÊ!
+                Já somos mais de <span className="font-bold border-2 border-red-500 rounded-full px-2 py-1 bg-red-500/20">1.280 confeiteiras</span>, só falta VOCÊ!
               </p>
             </div>
             <Button
@@ -97,7 +97,7 @@ export function Hero() {
                 height={40}
               />
               <p className="mt-2 text-base text-foreground font-semibold">
-                Já somos mais de <span className="font-bold">1.280 confeiteiras</span>, só falta VOCÊ!
+                Já somos mais de <span className="font-bold border-2 border-red-500 rounded-full px-2 py-1 bg-red-500/20">1.280 confeiteiras</span>, só falta VOCÊ!
               </p>
             </div>
             <Button
