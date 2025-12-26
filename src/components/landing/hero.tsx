@@ -39,7 +39,7 @@ export function Hero() {
             </p>
             <div className="mt-6 flex flex-col items-center sm:items-start">
               <Image
-                src="https://i.imgur.com/AWnZdVj.jpeg"
+                src="https://i.imgur.com/LF43K6e.png"
                 alt="Avaliações de alunas"
                 width={200}
                 height={40}
@@ -50,8 +50,7 @@ export function Hero() {
             </div>
             <Button
               size="lg"
-              className="mt-8 h-14 text-lg font-bold text-white"
-              style={{ backgroundColor: '#16a34a' }}
+              className="mt-8 h-14 text-lg font-bold text-white bg-green-600 hover:bg-green-700"
               asChild
             >
               <Link href="#oferta">
@@ -77,7 +76,7 @@ export function Hero() {
         )}
         <div className="bg-white p-6 relative z-10 flex flex-col items-center text-center mt-[-100px] mx-4 rounded-t-3xl rounded-b-lg shadow-2xl">
             <Image
-                src="https://i.imgur.com/JYMca6b.png"
+                src="https://i.imgur.com/JYMca6b_1.png"
                 alt="Escola de Donuts Logo"
                 width={150}
                 height={150}
@@ -92,7 +91,7 @@ export function Hero() {
             </p>
             <div className="mt-6 flex flex-col items-center">
               <Image
-                src="https://i.imgur.com/AWnZdVj.jpeg"
+                src="https://i.imgur.com/LF43K6e.png"
                 alt="Avaliações de alunas"
                 width={200}
                 height={40}
@@ -103,8 +102,7 @@ export function Hero() {
             </div>
             <Button
               size="lg"
-              className="mt-8 w-full h-14 text-lg font-bold text-white"
-              style={{ backgroundColor: '#16a34a' }}
+              className="mt-8 w-full h-14 text-lg font-bold text-white bg-green-600 hover:bg-green-700"
               asChild
             >
               <Link href="#oferta">
