@@ -4,7 +4,7 @@
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Card, CardContent } from '../ui/card';
-import { Lock, Eye } from 'lucide-react';
+import { Lock, Eye, X } from 'lucide-react';
 import React from 'react';
 import { Dialog, DialogContent } from '../ui/dialog';
 
@@ -63,16 +63,26 @@ export function Gallery() {
         </div>
       </div>
       <Dialog open={!!selectedImage} onOpenChange={(isOpen) => !isOpen && setSelectedImage(null)}>
-        <DialogContent className="p-0 border-0 max-w-2xl bg-transparent shadow-none">
+        <DialogContent className="p-0 border-0 max-w-2xl bg-card shadow-xl rounded-lg">
           {selectedImage && (
-            <Image
-              src={selectedImage.imageUrl}
-              alt={selectedImage.description}
-              width={800}
-              height={800}
-              className="object-contain w-full h-auto rounded-lg"
-              data-ai-hint={selectedImage.imageHint}
-            />
+            <div>
+              <div className="p-4 flex justify-between items-center border-b">
+                <p className="text-foreground/80">{selectedImage.description}</p>
+                <button onClick={() => setSelectedImage(null)} className="p-1 rounded-full hover:bg-muted">
+                    <X className="h-5 w-5 text-foreground/60" />
+                </button>
+              </div>
+              <div className="p-4">
+                <Image
+                  src={selectedImage.imageUrl}
+                  alt={selectedImage.description}
+                  width={800}
+                  height={800}
+                  className="object-contain w-full h-auto rounded-md"
+                  data-ai-hint={selectedImage.imageHint}
+                />
+              </div>
+            </div>
           )}
         </DialogContent>
       </Dialog>
