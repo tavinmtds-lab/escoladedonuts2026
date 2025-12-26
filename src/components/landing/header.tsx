@@ -5,9 +5,13 @@ export function Header() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Set a target date for December 11th of the current year.
     const now = new Date();
-    const targetDate = new Date(now.getFullYear(), 11, 11); // Month is 0-indexed, so 11 is December.
+    let targetYear = now.getFullYear();
+    // If the current date is past Jan 12 of the current year, set the target to next year.
+    if (now.getMonth() > 0 || (now.getMonth() === 0 && now.getDate() > 12)) {
+      targetYear += 1;
+    }
+    const targetDate = new Date(targetYear, 0, 12); // Month is 0-indexed, so 0 is January.
 
     const timer = setInterval(() => {
       const difference = +targetDate - +new Date();
@@ -38,7 +42,7 @@ export function Header() {
   return (
     <header className="bg-secondary text-secondary-foreground py-3 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
-        <p className="flex-shrink-0">Inscrições abertas até dia 11 de dezembro</p>
+        <p className="flex-shrink-0">Inscrições abertas até dia 12 de janeiro</p>
       </div>
     </header>
   );
