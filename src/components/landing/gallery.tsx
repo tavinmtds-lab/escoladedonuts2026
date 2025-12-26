@@ -1,11 +1,16 @@
 
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+'use client';
+
+import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Card, CardContent } from '../ui/card';
-import { Lock } from 'lucide-react';
+import { Lock, Eye } from 'lucide-react';
+import React from 'react';
+import { Dialog, DialogContent } from '../ui/dialog';
 
 export function Gallery() {
   const galleryImages = PlaceHolderImages.filter((img) => img.id.startsWith('gallery-'));
+  const [selectedImage, setSelectedImage] = React.useState<ImagePlaceholder | null>(null);
 
   return (
     <section className="py-12 sm:py-24 bg-background">
@@ -16,8 +21,12 @@ export function Gallery() {
           Explore uma prévia das delícias que você aprenderá a fazer. Cada receita foi pensada para <b>encantar visualmente e conquistar o paladar</b> de qualquer cliente.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mt-8">
-          {galleryImages.slice(0, 11).map((image, index) => (
-            <Card key={image.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group bg-card">
+          {galleryImages.slice(0, 11).map((image) => (
+            <Card 
+              key={image.id} 
+              className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group bg-card cursor-pointer"
+              onClick={() => setSelectedImage(image)}
+            >
               <CardContent className="p-0 relative">
                 <Image
                   src={image.imageUrl}
@@ -27,6 +36,9 @@ export function Gallery() {
                   className="object-cover w-full h-full aspect-square"
                   data-ai-hint={image.imageHint}
                 />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye className="h-12 w-12 text-white" />
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -50,6 +62,20 @@ export function Gallery() {
             </Card>
         </div>
       </div>
+      <Dialog open={!!selectedImage} onOpenChange={(isOpen) => !isOpen && setSelectedImage(null)}>
+        <DialogContent className="p-0 border-0 max-w-2xl bg-transparent shadow-none">
+          {selectedImage && (
+            <Image
+              src={selectedImage.imageUrl}
+              alt={selectedImage.description}
+              width={800}
+              height={800}
+              className="object-contain w-full h-auto rounded-lg"
+              data-ai-hint={selectedImage.imageHint}
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
