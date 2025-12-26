@@ -31,12 +31,23 @@ export function Hero() {
                 className="mb-2"
             />
             <p className="font-medium font-headline text-2xl text-primary" style={{ textShadow: '1px 1px 3px rgba(255,255,255,0.7)' }}>Escola de Donuts</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-headline mt-2 max-w-3xl text-primary font-montserrat" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-montserrat mt-2 max-w-3xl text-primary" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
               Aprenda a fazer <b className="font-extrabold">Donuts deliciosos e vendáveis</b> na sua própria cozinha!
             </h1>
             <p className="mt-4 text-xl max-w-2xl font-body text-primary-foreground" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
               Estão abertas as inscrições para a Escola de Donuts, onde você vai aprender a criar uma coleção incrível com <b>+de 12 receitas que vão te fazer lucrar o ano todo</b>.
             </p>
+            <div className="mt-6 flex flex-col items-center sm:items-start">
+              <Image
+                src="https://i.imgur.com/AWnZdVj.jpeg"
+                alt="Avaliações de alunas"
+                width={200}
+                height={40}
+              />
+              <p className="mt-2 text-lg text-primary-foreground font-semibold" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
+                Já somos mais de <span className="font-bold">1.280 confeiteiras</span>, só falta VOCÊ!
+              </p>
+            </div>
             <Button
               size="lg"
               className="mt-8 h-14 text-lg font-bold text-white"
@@ -79,6 +90,17 @@ export function Hero() {
             <p className="mt-4 text-base font-body" style={{ color: '#4A3B36', fontFamily: "'Poppins', sans-serif" }}>
               Estão abertas as inscrições para a Escola de Donuts, onde você vai aprender a criar uma coleção incrível com <b>+de 12 receitas que vão te fazer lucrar o ano todo</b>.
             </p>
+            <div className="mt-6 flex flex-col items-center">
+              <Image
+                src="https://i.imgur.com/AWnZdVj.jpeg"
+                alt="Avaliações de alunas"
+                width={200}
+                height={40}
+              />
+              <p className="mt-2 text-base text-foreground font-semibold">
+                Já somos mais de <span className="font-bold">1.280 confeiteiras</span>, só falta VOCÊ!
+              </p>
+            </div>
             <Button
               size="lg"
               className="mt-8 w-full h-14 text-lg font-bold text-white"
