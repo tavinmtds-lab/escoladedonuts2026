@@ -65,7 +65,7 @@ export function Pricing() {
           </CardContent>
           <CardFooter className="flex-col gap-2 px-6 pb-6">
             <Button size="lg" className="w-full font-bold h-14 text-lg text-white" style={{ backgroundColor: '#16a34a' }} asChild>
-              <Link href="https://pay.cakto.com.br/3fzqerk_623427" target="_blank" rel="noopener noreferrer">
+              <Link href="https://escoladecookies.mycartpanda.com/checkout/204198251:1" target="_blank" rel="noopener noreferrer">
                 <Sparkles className="mr-2 h-5 w-5" />
                 QUERO ACESSO VITALÍCIO
               </Link>

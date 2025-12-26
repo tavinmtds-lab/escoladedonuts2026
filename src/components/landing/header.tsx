@@ -43,6 +43,12 @@ export function Header() {
     <header className="bg-secondary text-secondary-foreground py-3 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
         <p className="flex-shrink-0">Inscrições abertas até dia 12 de janeiro</p>
+        <div className="flex items-center gap-2">
+            <CountdownBlock value={timeLeft.days} label="Dias" />
+            <CountdownBlock value={timeLeft.hours} label="Horas" />
+            <CountdownBlock value={timeLeft.minutes} label="Minutos" />
+            <CountdownBlock value={timeLeft.seconds} label="Segundos" />
+        </div>
       </div>
     </header>
   );
