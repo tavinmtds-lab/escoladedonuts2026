@@ -24,7 +24,7 @@ export function Hero() {
         )}
         <div className="relative z-10 container mx-auto flex flex-col sm:items-start sm:justify-start text-center sm:text-left py-16 sm:py-32">
             <Image
-                src="https://i.imgur.com/JYMca6b.png"
+                src="https://i.imgur.com/SkEtdKt.jpeg"
                 alt="Escola de Donuts Logo"
                 width={180}
                 height={180}
@@ -76,7 +76,7 @@ export function Hero() {
         )}
         <div className="bg-white p-6 relative z-10 flex flex-col items-center text-center mt-[-100px] mx-4 rounded-t-3xl rounded-b-lg shadow-2xl">
             <Image
-                src="https://i.imgur.com/JYMca6b_1.png"
+                src="https://i.imgur.com/SkEtdKt.jpeg"
                 alt="Escola de Donuts Logo"
                 width={150}
                 height={150}
