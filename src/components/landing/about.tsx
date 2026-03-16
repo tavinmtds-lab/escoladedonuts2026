@@ -11,7 +11,7 @@ export function About() {
   const highlights = [
     {
       icon: <Trophy className="h-10 w-10 sm:h-12 sm:w-12 text-black" />,
-      title: 'Método validado por +800 alunas',
+      title: 'Método validado por <span class="text-[#C45440]">+800 alunas</span>',
       description: 'Seu método de ensino foi <b>comprovado por mais de 800 alunas</b> que agora vendem com sucesso!',
     },
     {
@@ -32,17 +32,30 @@ export function About() {
           </p>
         </div>
 
-        <Card className="mt-8 bg-white border-black border-[1px] shadow-none w-full max-w-3xl rounded-xl">
-          <CardContent className="p-6 sm:p-12 space-y-10">
+        <div className="flex justify-center mt-4">
+          {julianaImage && (
+            <Image
+              src={julianaImage.imageUrl}
+              alt={julianaImage.description}
+              width={350}
+              height={350}
+              className="rounded-full shadow-lg border-4 border-white"
+              data-ai-hint={julianaImage.imageHint}
+            />
+          )}
+        </div>
+
+        <Card className="bg-white border-black border-[1px] shadow-none w-full max-w-3xl rounded-[2rem] overflow-hidden">
+          <CardContent className="p-8 sm:p-14 space-y-10">
             {highlights.map((highlight, index) => (
               <div key={index}>
-                {index > 0 && <Separator className="mb-10 opacity-50" />}
+                {index > 0 && <Separator className="mb-10 opacity-20 bg-black/20" />}
                 <div className="flex items-start gap-6 sm:gap-8">
                   <div className="flex-shrink-0 pt-1">
                     {highlight.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl sm:text-3xl font-bold font-headline text-black">{highlight.title}</h3>
+                    <h3 className="text-2xl sm:text-3xl font-bold font-headline text-black" dangerouslySetInnerHTML={{ __html: highlight.title }}></h3>
                     <p className="mt-3 text-lg sm:text-2xl text-foreground/80 leading-relaxed font-body" dangerouslySetInnerHTML={{ __html: highlight.description }}></p>
                   </div>
                 </div>
@@ -50,19 +63,6 @@ export function About() {
             ))}
           </CardContent>
         </Card>
-
-        <div className="flex justify-center mt-8">
-          {julianaImage && (
-            <Image
-              src={julianaImage.imageUrl}
-              alt={julianaImage.description}
-              width={300}
-              height={300}
-              className="rounded-full shadow-lg"
-              data-ai-hint={julianaImage.imageHint}
-            />
-          )}
-        </div>
       </div>
     </section>
   );
