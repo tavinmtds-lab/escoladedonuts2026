@@ -18,17 +18,17 @@ export function CallToAction() {
   ];
 
   return (
-    <section className="bg-secondary text-secondary-foreground py-12 sm:py-24 shadow-inner">
+    <section className="bg-[#0f4d3d] text-white py-12 sm:py-24 shadow-inner">
       <div className="container mx-auto flex flex-col items-center text-center gap-8 px-4">
         <div className="flex flex-col items-center">
-            <div className="bg-white rounded-full px-2 py-1 inline-block">
-                <p className="font-medium font-headline text-xs sm:text-sm text-secondary">Sua Mentora Digital de Confeitaria</p>
+            <div className="bg-white rounded-full px-4 py-1.5 inline-block mb-4 shadow-md">
+                <p className="font-bold font-headline text-xs sm:text-sm text-[#0f4d3d]">Sua Mentora Digital de Confeitaria</p>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-extrabold font-headline mt-4">
+            <h2 className="text-4xl sm:text-5xl font-extrabold font-headline text-white leading-tight">
                 Você <b>não vai</b> aprender sozinha.
             </h2>
 
-            <div className="w-full max-w-xs sm:max-w-md mt-8">
+            <div className="w-full max-w-xs sm:max-w-md mt-8 bg-black/10 p-2 rounded-2xl">
               <Script src="https://fast.wistia.com/player.js" async />
               <Script src="https://fast.wistia.com/embed/gez09v8ptg.js" async type="module"/>
               <style jsx>{`
@@ -43,23 +43,25 @@ export function CallToAction() {
               <wistia-player media-id="gez09v8ptg" aspect="0.5625"></wistia-player>
             </div>
             
-            <div className="flex flex-col items-center w-full max-w-lg">
-                <ul className="mt-8 space-y-2 text-left self-start w-full px-4 sm:px-0">
+            <div className="flex flex-col items-center w-full max-w-lg mt-10">
+                <ul className="space-y-4 text-left self-start w-full px-4 sm:px-0">
                     {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-3 text-base sm:text-lg">
-                        <span className="text-xl sm:text-2xl mt-1">{benefit.icon}</span>
+                    <li key={index} className="flex items-start gap-3 text-lg sm:text-xl text-white/95">
+                        <span className="text-2xl mt-1">{benefit.icon}</span>
                         <span className="flex-1" dangerouslySetInnerHTML={{ __html: benefit.text }} />
                     </li>
                     ))}
                 </ul>
-                <p className="mt-8 text-lg sm:text-xl italic px-4 sm:px-0">“Cada receita é um passo para a sua <b>liberdade financeira</b>.” – DONNIE IA</p>
+                <div className="mt-10 p-4 border-l-4 border-primary bg-white/5 rounded-r-lg w-full text-left">
+                  <p className="text-lg sm:text-xl italic text-white/90">“Cada receita é um passo para a sua <b>liberdade financeira</b>.” – DONNIE IA</p>
+                </div>
             </div>
-            <Button size="lg" variant="default" className="mt-8 h-14 text-lg w-full max-w-md sm:w-auto animate-gold-shine" asChild>
+            <Button size="lg" variant="default" className="mt-10 h-16 text-xl px-12 w-full max-w-md sm:w-auto animate-gold-shine font-bold shadow-2xl transition-transform hover:scale-105" asChild>
                 <Link href="#oferta">
                 QUERO DESBLOQUEAR MINHA MENTORA
                 </Link>
             </Button>
-            <p className="mt-2 text-sm text-secondary-foreground/80">🔐 Exclusiva para alunas da Escola de Donuts</p>
+            <p className="mt-4 text-sm text-white/70 font-medium">🔐 Exclusiva para alunas da Escola de Donuts</p>
         </div>
       </div>
     </section>

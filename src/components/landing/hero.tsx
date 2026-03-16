@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '../ui/button';
 import Image from 'next/image';
@@ -46,7 +47,7 @@ export function Hero() {
                 height={45}
               />
               <p className="mt-3 text-lg text-primary font-bold">
-                Já somos mais de <span className="font-extrabold border-2 border-red-600 rounded-full px-3 py-1 bg-white inline-block shadow-sm">1.280 confeiteiras</span>, só falta VOCÊ!
+                Já somos mais de <span className="font-extrabold border-4 border-red-600 rounded-full px-4 py-1.5 bg-white inline-block shadow-xl transform -rotate-1">1.280 confeiteiras</span>, só falta VOCÊ!
               </p>
             </div>
             <Button
@@ -97,8 +98,8 @@ export function Hero() {
                 width={180}
                 height={36}
               />
-              <p className="mt-3 text-base text-foreground font-bold">
-                Já somos mais de <span className="font-extrabold border-2 border-red-600 rounded-full px-2 py-0.5 bg-white shadow-sm">1.280 confeiteiras</span>
+              <p className="mt-3 text-base text-foreground font-bold text-center">
+                Já somos mais de <br/> <span className="font-extrabold border-2 border-red-600 rounded-full px-3 py-1 bg-white shadow-md inline-block mt-2">1.280 confeiteiras</span>
               </p>
             </div>
             <Button
