@@ -21,8 +21,8 @@ export function CallToAction() {
     <section className="bg-[#0f4d3d] text-white py-12 sm:py-24 shadow-inner">
       <div className="container mx-auto flex flex-col items-center text-center gap-8 px-4">
         <div className="flex flex-col items-center">
-            <div className="bg-white rounded-full px-4 py-1.5 inline-block mb-4 shadow-md">
-                <p className="font-bold font-headline text-xs sm:text-sm text-[#0f4d3d]">Sua Mentora Digital de Confeitaria</p>
+            <div className="bg-white rounded-full px-6 py-2 inline-block mb-6 shadow-md border-2 border-white/20">
+                <p className="font-bold font-headline text-lg sm:text-2xl text-[#0f4d3d] leading-none">Sua Mentora Digital de Confeitaria</p>
             </div>
             <h2 className="text-4xl sm:text-5xl font-extrabold font-headline text-white leading-tight">
                 Você <b>não vai</b> aprender sozinha.
