@@ -58,15 +58,6 @@ export default function RootLayout({
           <img height="1" width="1" style={{display: 'none'}}
               src="https://www.facebook.com/tr?id=1204964245014324&ev=PageView&noscript=1" />
         </noscript>
-        <Script id="clarity-pixel" strategy="afterInteractive">
-            {`
-                (function(c,l,a,r,i,t,y){
-                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "twky6z821n");
-            `}
-        </Script>
       </head>
       <body className={cn("font-body antialiased", poppins.variable, playfairDisplay.variable, montserrat.variable)}>
         {children}
