@@ -7,11 +7,11 @@ export function Header() {
   useEffect(() => {
     const now = new Date();
     let targetYear = now.getFullYear();
-    // If the current date is past Jan 12 of the current year, set the target to next year.
+    // Setting target to January 12th as previously requested
     if (now.getMonth() > 0 || (now.getMonth() === 0 && now.getDate() > 12)) {
       targetYear += 1;
     }
-    const targetDate = new Date(targetYear, 0, 12); // Month is 0-indexed, so 0 is January.
+    const targetDate = new Date(targetYear, 0, 12);
 
     const timer = setInterval(() => {
       const difference = +targetDate - +new Date();
@@ -31,19 +31,21 @@ export function Header() {
   }, []);
 
   const CountdownBlock = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center">
-      <div className="text-3xl sm:text-2xl font-bold bg-primary text-primary-foreground rounded-md px-2 py-1">
+    <div className="flex flex-col items-center gap-1">
+      <div className="text-3xl sm:text-4xl font-extrabold bg-white text-primary rounded-xl w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-md border border-primary/10">
         {String(value).padStart(2, '0')}
       </div>
-      <span className="text-xs uppercase">{label}</span>
+      <span className="text-[10px] sm:text-xs font-bold text-foreground/60 uppercase tracking-wider">{label}</span>
     </div>
   );
 
   return (
-    <header className="bg-secondary text-secondary-foreground py-3 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
-        <p className="flex-shrink-0">Inscrições abertas até dia 12 de janeiro</p>
-        <div className="flex items-center gap-2">
+    <header className="bg-[#FFF7F5] py-6 px-4 sm:px-6 lg:px-8 border-b border-primary/10">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-6 text-center">
+        <h2 className="text-2xl sm:text-4xl font-extrabold font-headline italic text-primary leading-tight">
+          Inscrições abertas até dia 12 de janeiro
+        </h2>
+        <div className="flex items-center gap-2 sm:gap-4">
             <CountdownBlock value={timeLeft.days} label="Dias" />
             <CountdownBlock value={timeLeft.hours} label="Horas" />
             <CountdownBlock value={timeLeft.minutes} label="Minutos" />

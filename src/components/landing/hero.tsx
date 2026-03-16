@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '../ui/button';
 import Image from 'next/image';
@@ -10,15 +9,15 @@ export function Hero() {
   const heroImageMobile = PlaceHolderImages.find((img) => img.id === 'hero-woman-mobile');
 
   return (
-    <section className="relative bg-background">
+    <section className="relative bg-background overflow-hidden">
       {/* --- Desktop View --- */}
-      <div className="hidden sm:block">
+      <div className="hidden sm:block min-h-[600px] lg:min-h-[800px]">
         {heroImageDesktop && (
           <Image
             src={heroImageDesktop.imageUrl}
             alt={heroImageDesktop.description}
             fill
-            className="object-cover object-center"
+            className="object-cover object-center sm:object-[center_30%]"
             priority
           />
         )}
@@ -64,7 +63,7 @@ export function Hero() {
       {/* --- Mobile View --- */}
       <div className="sm:hidden flex flex-col">
         {heroImageMobile && (
-          <div className="relative w-full aspect-[9/10]">
+          <div className="relative w-full aspect-[4/5]">
             <Image
               src={heroImageMobile.imageUrl}
               alt={heroImageMobile.description}
@@ -74,27 +73,27 @@ export function Hero() {
             />
           </div>
         )}
-        <div className="bg-white p-6 relative z-10 flex flex-col items-center text-center mt-[-100px] mx-4 rounded-t-3xl rounded-b-lg shadow-2xl">
+        <div className="bg-white p-6 relative z-10 flex flex-col items-center text-center mt-[-60px] mx-4 rounded-t-3xl rounded-b-lg shadow-2xl mb-8">
             <Image
                 src="https://i.imgur.com/SkEtdKt.jpeg"
                 alt="Escola de Donuts Logo"
-                width={150}
-                height={150}
+                width={120}
+                height={120}
                 className="mb-2"
             />
-            <p className="font-medium font-headline text-xl text-primary" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }}>Escola de Donuts</p>
+            <p className="font-medium font-headline text-xl text-primary">Escola de Donuts</p>
             <h1 className="text-3xl font-bold font-montserrat mt-4 text-primary">
               Aprenda a fazer <b className="font-extrabold">Donuts deliciosos e vendáveis</b> na sua própria cozinha!
             </h1>
-            <p className="mt-4 text-base font-body" style={{ color: '#4A3B36', fontFamily: "'Poppins', sans-serif" }}>
+            <p className="mt-4 text-base font-body text-foreground/80 leading-relaxed">
               Estão abertas as inscrições para a Escola de Donuts, onde você vai aprender a criar uma coleção incrível com <b>+de 12 receitas que vão te fazer lucrar o ano todo</b>.
             </p>
             <div className="mt-6 flex flex-col items-center">
               <Image
                 src="https://i.imgur.com/LF43K6e.png"
                 alt="Avaliações de alunas"
-                width={200}
-                height={40}
+                width={180}
+                height={36}
               />
               <p className="mt-2 text-base text-foreground font-semibold">
                 Já somos mais de <span className="font-bold border-2 border-red-500 rounded-full px-2 py-1 bg-red-500/20">1.280 confeiteiras</span>, só falta VOCÊ!
