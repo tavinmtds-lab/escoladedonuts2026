@@ -204,10 +204,10 @@ export function BrickcakeFeatures() {
                 💰De <span className="line-through">R$147,90</span> por
               </p>
               <p className="text-5xl sm:text-6xl font-extrabold text-black mt-1">
-                R$37,90
+                R$19,90
               </p>
               <p className="text-lg text-black mt-1 font-bold">
-                ou até 9x de R$5,14 no cartão
+                ou até 9x de R$2,71 no cartão
               </p>
               <div className="flex items-center justify-center gap-2 mt-2 text-xs text-foreground/70">
                 <span>Oferta apenas nessa página</span>
