@@ -3,13 +3,13 @@
     {
       "id": "hero-woman-desktop",
       "description": "Woman smiling holding a box of delicious donuts",
-      "imageUrl": "https://i.imgur.com/Cidq8gh.jpeg",
+      "imageUrl": "https://i.imgur.com/9Lomq0y.png",
       "imageHint": "donuts box"
     },
     {
       "id": "hero-woman-mobile",
       "description": "Woman holding a delicious donut",
-      "imageUrl": "https://i.imgur.com/jcZWAZm.png",
+      "imageUrl": "https://i.imgur.com/9Lomq0y.png",
       "imageHint": "woman donut"
     },
     {
