@@ -10,12 +10,12 @@ export function About() {
 
   const highlights = [
     {
-      icon: <Trophy className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />,
+      icon: <Trophy className="h-10 w-10 sm:h-12 sm:w-12 text-black" />,
       title: 'Método validado por +800 alunas',
       description: 'Seu método de ensino foi <b>comprovado por mais de 800 alunas</b> que agora vendem com sucesso!',
     },
     {
-      icon: <Lightbulb className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />,
+      icon: <Lightbulb className="h-10 w-10 sm:h-12 sm:w-12 text-black" />,
       title: 'Nossa Missão',
       description: 'Ajuda-la a transformar suas habilidades na cozinha ou confeitaria em uma <b>fonte de renda, alegria e realização pessoal</b>.',
     },
@@ -32,18 +32,18 @@ export function About() {
           </p>
         </div>
 
-        <Card className="mt-8 bg-white/50 border-primary/20 w-full max-w-3xl">
-          <CardContent className="p-6 sm:p-8 space-y-6">
+        <Card className="mt-8 bg-white border-black border-[1px] shadow-none w-full max-w-3xl rounded-xl">
+          <CardContent className="p-6 sm:p-12 space-y-10">
             {highlights.map((highlight, index) => (
               <div key={index}>
-                {index > 0 && <Separator className="mb-6" />}
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 text-secondary bg-secondary/10 p-2 rounded-full">
+                {index > 0 && <Separator className="mb-10 opacity-50" />}
+                <div className="flex items-start gap-6 sm:gap-8">
+                  <div className="flex-shrink-0 pt-1">
                     {highlight.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-3xl font-bold font-headline">{highlight.title}</h3>
-                    <p className="mt-2 text-base sm:text-2xl text-foreground/80" dangerouslySetInnerHTML={{ __html: highlight.description }}></p>
+                    <h3 className="text-2xl sm:text-3xl font-bold font-headline text-black">{highlight.title}</h3>
+                    <p className="mt-3 text-lg sm:text-2xl text-foreground/80 leading-relaxed font-body" dangerouslySetInnerHTML={{ __html: highlight.description }}></p>
                   </div>
                 </div>
               </div>
